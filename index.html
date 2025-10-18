@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StyleStash Admin Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'deep-black': '#0E0E0E',
+            'graphite': '#1A1A1A',
+            'gold': '#D4AF37',
+            'dark-gold': '#B8860B',
+            'silver': '#E0E0E0',
+            'platinum': '#C0C0C0',
+            'emerald': '#5CFFB6',
+          },
+          fontFamily: {
+            'display': ['"Playfair Display"', 'serif'],
+            'body': ['"Poppins"', 'sans-serif'],
+          },
+          boxShadow: {
+            'gold-glow': '0 0 15px rgba(212, 175, 55, 0.3)',
+            'gold-glow-strong': '0 0 30px rgba(212, 175, 55, 0.5)',
+            'neumorphic-light': 'inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff',
+            'neumorphic-dark': 'inset 2px 2px 4px #0a0a0a, inset -2px -2px 4px #2a2a2a',
+          },
+          backgroundImage: {
+            'grid-pattern': `url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0 H50 M0 0 V50' fill='none' stroke='%23D4AF37' stroke-width='0.2' opacity='0.1'/%3E%3C/svg%3E")`,
+            'gold-gradient': 'linear-gradient(to right, #D4AF37, #B8860B)',
+          }
+        }
+      }
+    }
+  </script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.3.0"
+  }
+}
+</script>
+</head>
+<body class="font-body bg-gray-50 text-gray-800 dark:bg-deep-black dark:text-silver transition-colors duration-300">
+  <div id="root"></div>
+</body>
+</html>
